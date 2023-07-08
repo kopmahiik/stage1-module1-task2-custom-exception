@@ -28,7 +28,7 @@ public class StudentManagerTest {
   @Test
   public void testExceptionMessage() {
     try {
-      assertNotNull(manager.find(1000));
+      assertNotNull(manager.find(1000L));
     } catch (IllegalArgumentException e) {
       assertEquals("Could not find student with ID 1000", e.getMessage());
     }
